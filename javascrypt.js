@@ -6,6 +6,8 @@ const tl = new TimelineLite({ paused: true, reversed: true });
 tl.to('.cover', 1, {
         width: "60%",
         ease: Power2.easeOut
+
+
     }).to('nav', 1, {
         height: "100%",
         ease: Power2.easeOut
@@ -19,7 +21,7 @@ tl.to('.cover', 1, {
         x: 0,
         onComplete: function() {
             navopen.getElementsByClassName.pointerEvents = "auto";
-            console.log("done");
+            console.log("done  ");
         }
     })
 navbuton.addEventListener('click', (e) => {
